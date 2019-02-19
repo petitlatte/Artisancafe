@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+body{
+	margin:0;
+	padding:0;
+	background-color:#a3b70b; /*primary green colour*/
+}
+
+h1,h2,h3{
+	font-family: 'Amatic SC', cursive;
+	text-align: center;	
+}
+
+h2{
+	font-size: 40px;
+}
+
+p{
+	color:white;
+	line-height: 2;
+	font-size:18px;
+}
+
+.copyright{
+	font-size:10px;
+}
+
+/******************************************************************/
+
+							/*HEADER*/
+
+/******************************************************************/
+
+
+header{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	background-color: #b5c337; /*lighter green colour*/
+}
+
+/*logo*/
+
+
+.topLogo{
+	display: inline-block;
+	padding-top:10px;
+}
+
+
+/*Top Navigation Bar*/
+
+header .topNav ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+
+.topNav a{
+	display:block;
+	padding:18px;
+	color:white;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.topNav a:hover{
+	cursor:pointer;
+	transition: 0.8s ease;
+	background-color: #a3b70b;
+}
+
+@media only screen and (min-width: 768px) {
+
+	header .top{
+		display:flex;
+		align-items:center;
+		justify-content:space-between;
+		max-width:1200px;
+		margin-left: auto;
+		margin-right:auto;
+	}
+
+
+	.topNav {
+		display:block !important;
+	}
+	
+	.topNav ul{
+		display:flex;
+	}
+
+
+/******************************************************************/
+
+							/*MAIN*/
+
+/******************************************************************/
+
+
+.parallax {
+background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#parallax-top{
+	background-image: url("../img/image1.jpg");
+  	height:90vh;	
+}
+
+#parallax-bottom{
+	background-image: url("../img/image2.jpg");
+	  height:50vh;	
+}
+
+.mainA, .mainB{
+	margin-left: auto;
+	margin-right:auto;
+	max-width:1000px;
+	padding-top:30px;
+}
+
+.mainA{
+	padding-bottom:100px;
+}
+
+.mainB{
+	text-align: center;
+	padding-bottom:80px;
+}
+
+
+/******************************************************************/
+
+							/*FOOTER*/
+
+/******************************************************************/
+
+footer{
+	position:relative;
+}
+
+.footerA{
+	bottom:0;
+	left:0;
+	width:100%;
+	background-color: #3c342f; /*secondary black colour*/
+	color:white;
+}
+
+.footerA .container{
+	margin-left: auto;
+	margin-right:auto;
+	max-width:1000px;
+	padding-top:30px;	
+}
+
+.footerA .container h2{
+	text-align: left;
+}
