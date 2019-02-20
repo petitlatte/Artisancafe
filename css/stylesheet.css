@@ -19,12 +19,13 @@ h2{
 	font-size: 40px;
 }
 
-h3{
+h3,a{
 	font-size:20px;
 }
 
 p{
-	color:white;
+	color:#444c00; /*dark green colour*/
+	font-family: 'Roboto', sans-serif;
 	line-height: 2;
 	font-size:18px;
 }
@@ -54,7 +55,7 @@ header{
 
 .topLogo{
 	display: inline-block;
-	padding-top:10px;
+	padding-top:5px;
 }
 
 
@@ -169,6 +170,9 @@ footer{
 	text-align: left;
 }
 
+.footerA .container p{
+	color: white;
+}
 @media(min-width:767px){
 
 	.footerA .container{
