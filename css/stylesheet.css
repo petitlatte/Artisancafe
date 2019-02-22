@@ -20,7 +20,7 @@ h2{
 }
 
 h3,a{
-	font-size:20px;
+	font-size:26px;
 }
 
 p{
@@ -118,6 +118,13 @@ background-attachment: fixed;
 	background-image: url("../img/image2.jpg");
 	  height:50vh;	
 }
+
+#parallax-top2{
+	background-image: url("../img/image1.jpg");
+  	height:90vh;	
+}
+
+
 
 .mainA, .mainB{
 	margin-left: auto;
