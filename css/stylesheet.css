@@ -58,6 +58,18 @@ header{
 	padding-top:5px;
 }
 
+/*toggle button*/
+
+.toggle{
+	margin-right:10px;
+	padding:0;
+	border:none;
+	outline:none;
+	background:none;
+	font-size:28px;
+	opacity:0.6;
+	cursor:pointer;
+}
 
 /*Top Navigation Bar*/
 
@@ -82,7 +94,7 @@ header .topNav ul{
 }
 
 @media only screen and (min-width: 768px) {
-
+	
 	header .top{
 		display:flex;
 		align-items:center;
@@ -92,14 +104,36 @@ header .topNav ul{
 		margin-right:auto;
 	}
 
+	.topNav ul{
+		display:flex;
+	}
+
+	.toggle{
+		display:none;
+	}
 
 	.topNav {
 		display:block !important;
 	}
 	
-	.topNav ul{
+
+}
+@media only screen and (max-width: 767px){
+	.container-small{
 		display:flex;
+		align-items:center;
+		justify-content:space-between;
 	}
+	
+	.topNav{
+		display:none;
+	}
+
+	.topLogo{
+		display:block;
+		margin: 0 auto;
+	}
+}	
 
 
 /******************************************************************/
