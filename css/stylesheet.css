@@ -220,11 +220,6 @@ footer{
 		background-color: #a3b70b;
 	}
 
-	.topNav li:hover{
-		background-color: red;
-		transition: 1s ease;
-	}
-
 	.topLogo{
 		display:block;
 		margin: 0 auto;
