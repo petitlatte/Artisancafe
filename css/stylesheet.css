@@ -126,20 +126,31 @@ background-attachment: fixed;
 
 
 
-.mainA, .mainB{
+.mainA, .mainB, .mainC, .mainD{
 	margin-left: auto;
 	margin-right:auto;
 	max-width:1000px;
 	padding-top:30px;
 }
 
-.mainA{
-	padding-bottom:100px;
+.mainA,.mainB,.mainC,.mainD{
+	text-align: center;
+	padding-bottom:80px;	
 }
 
-.mainB{
-	text-align: center;
-	padding-bottom:80px;
+
+
+.mainD .container{
+	display:flex;
+	flex-wrap:wrap;
+}
+
+
+ .mainD .container img{
+	flex: 1;
+	width:50%;
+	height:50%;
+	cursor:pointer;
 }
 
 
