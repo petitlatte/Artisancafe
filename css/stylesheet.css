@@ -107,33 +107,50 @@ background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  	height:90vh;  
 }
 
-#parallax-top{
+#parallax-top1{
 	background-image: url("../img/image1.jpg");
-  	height:90vh;	
-}
-
-#parallax-bottom{
-	background-image: url("../img/image2.jpg");
-	  height:50vh;	
 }
 
 #parallax-top2{
-	background-image: url("../img/image1.jpg");
-  	height:90vh;	
+	background-image: url("../img/image2.jpg");	
+}
+
+#parallax-top3{
+	background-image: url("../img/image3.jpg");	
+}
+
+#parallax-top4{
+	background-image: url("../img/image4.jpg");	
+}
+
+#parallax-top5{
+	background-image: url("../img/image5.jpg");	
+}
+
+#parallax-top6{
+	background-image: url("../img/image6.jpg");	
+}
+
+#parallax-bottom{
+	background-image: url("../img/image7.jpg");
+	  height:50vh;	
 }
 
 
 
-.mainA, .mainB, .mainC, .mainD{
+
+
+.mainA, .mainB, .mainC, .mainD,.mainE,.mainF{
 	margin-left: auto;
 	margin-right:auto;
 	max-width:1000px;
 	padding-top:30px;
 }
 
-.mainA,.mainB,.mainC,.mainD{
+.mainA,.mainB,.mainC,.mainD,.mainE,.mainF{
 	text-align: center;
 	padding-bottom:80px;	
 }
@@ -152,6 +169,23 @@ background-attachment: fixed;
 	height:50%;
 	cursor:pointer;
 }
+
+.mainE .container-gallery {
+		display:block;
+		margin:0 auto;
+
+}
+
+.mainE .container-gallery img {
+	width:25%;
+	height:100%;
+	margin:5px;
+}
+
+.mainE img {
+	width:50%;
+}
+
 
 
 /******************************************************************/
@@ -222,6 +256,10 @@ footer{
 
 @media only screen and (max-width: 767px){
 
+
+	.parallax{
+		height:60vh;
+	}
 	.container{
 		text-align: center;
 		padding:12px;
@@ -246,4 +284,20 @@ footer{
 	.footerA .container h2{
 		text-align: center;
 	}
+
+	.mainE .container-gallery{
+		display:flex;
+		flex-wrap:wrap;
+	}
+
+	.mainE .container-gallery img{
+	flex:1;
+	width:50%;
+	}
+
+	.mainE img{
+	flex:1;
+	width:80%;
+	}
+
 }	
