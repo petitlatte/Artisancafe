@@ -79,7 +79,7 @@ header .topNav ul{
 	list-style: none;
 }
 
-.topNav a{
+header .topNav a{
 	display:block;
 	padding:18px;
 	color:white;
@@ -87,10 +87,10 @@ header .topNav ul{
 	text-decoration: none;
 }
 
-.topNav a:hover{
+header .topNav a:hover{
 	cursor:pointer;
 	transition: 0.8s ease;
-	background-color: #a3b70b;
+	background-color: #444c00;
 }
 
 
@@ -160,15 +160,17 @@ background-attachment: fixed;
 .mainD .container{
 	display:flex;
 	flex-wrap:wrap;
+	justify-content: space-between;
 }
 
 
  .mainD .container img{
-	flex: 1;
-	width:50%;
-	height:50%;
+	max-height: 150px;
 	cursor:pointer;
 }
+
+
+
 
 .mainE .container-gallery {
 		display:block;
