@@ -143,33 +143,53 @@ background-attachment: fixed;
 
 
 
-.mainA, .mainB, .mainC, .mainD,.mainE,.mainF{
+.mainA, .mainB, .mainC, .mainD, .mainE, .mainF{
 	margin-left: auto;
 	margin-right:auto;
 	max-width:1000px;
 	padding-top:30px;
 }
 
-.mainA,.mainB,.mainC,.mainD,.mainE,.mainF{
+.mainA,.mainB,.mainC,.mainD, .mainE, .mainF{
 	text-align: center;
 	padding-bottom:80px;	
 }
 
 
 
+/*GALLERY FLEX BOX*/
+
+
 .mainD .container{
 	display:flex;
 	flex-wrap:wrap;
-	justify-content: space-between;
+	max-width:none;
+	margin: 2px auto;
 }
 
-
- .mainD .container img{
-	max-height: 150px;
-	cursor:pointer;
+.mainD article{
+	flex: 1 1 250px;
+	display: flex;
 }
 
+.mainD a{
+	position:relative;
+	flex:1;
+	margin:6px;
+	display:block;
+	text-decoration:none;
+}
 
+.mainD a:hover{
+	opacity:0.8;
+	transition:0.4s ease;
+}
+.mainD .photo{
+	min-height:250px;
+	background-position:center;
+	background-size:cover;
+
+}
 
 
 .mainE .container-gallery {
@@ -302,4 +322,11 @@ footer{
 	width:80%;
 	}
 
+
 }	
+
+@media only screen and (min-width: 1000px){
+	.mainD article{
+		flex: 1 1 25%;
+	}
+}
