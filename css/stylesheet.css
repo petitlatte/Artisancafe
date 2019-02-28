@@ -85,6 +85,7 @@ header .topNav a{
 	color:white;
 	font-size: 18px;
 	text-decoration: none;
+	font-family: 'Roboto', sans-serif;	
 }
 
 header .topNav a:hover{
